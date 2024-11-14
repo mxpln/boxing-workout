@@ -4,6 +4,8 @@ import Timer from './components/Timer';
 import CombinationTrainer from './components/CombinationTrainer';
 import WorkoutPlan from './components/WorkoutPlan';
 import TechniqueGuide from './components/TechniqueGuide';
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 function App() {
   const [activeTab, setActiveTab] = useState('timer');
@@ -82,6 +84,7 @@ function App() {
           {activeTab === 'techniques' && <TechniqueGuide />}
         </div>
       </main>
+      <SpeedInsights />
     </div>
   );
 }
